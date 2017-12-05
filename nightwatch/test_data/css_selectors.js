@@ -1,5 +1,6 @@
 module.exports = {
     homeScreen: {
+        message: 'h1[class="home-text"]',
         startButton: 'button[class=home-btn]',
         
     },
@@ -21,7 +22,8 @@ module.exports = {
         nextButton: 'button[name=next]'
     },
     cityScreen: {
-        city: 'input[name="cityName"]'
+        city: 'input[name="cityName"]',
+        nextButton: 'button[name=next]'
     },
     whatPropScreen: {
         primaryHome: 'button[name="primary"]',
