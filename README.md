@@ -34,7 +34,7 @@
   <summary>The form is a web application...</summary> that should also function completely in a mobile browser.  The latest versions (as of 10/5/17) of Chrome, Firefox, Microsoft Edge, and Safari will be supported.
 </details>
 
-### User Characteristics
+### User Characteristicssd
 
 <details>
   <summary>The typical user of this web form is expected...</summary> to be an individual without much tech savvy, so the user interface should be very simple.
