@@ -1,5 +1,6 @@
 module.exports = {
     homeScreen: {
+        message: 'h1[class="home-text"]',
         startButton: 'button[class=home-btn]',
         
     },
@@ -21,7 +22,8 @@ module.exports = {
         nextButton: 'button[name=next]'
     },
     cityScreen: {
-        city: 'input[name="cityName"]'
+        city: 'input[name="cityName"]',
+        nextButton: 'button[name=next]'
     },
     whatPropScreen: {
         primaryHome: 'button[name="primary"]',
@@ -67,6 +69,24 @@ module.exports = {
     },
     overviewScreen: {
         send: 'button[name="send"]',
-        startAgain: 'button[name="startOver"]'
+        startAgain: 'button[name="startOver"]',
+        //selectors for the text field on the summary screen
+        name: 'div[name="name"]',
+        email: 'div[name="email"]',
+        loan: 'div[name="loan"]',
+        property: 'div[name="property"]',
+        city: 'div[name="city"]',
+        propertyType: 'div[name="propertyType"]',
+        found: 'div[name="found"]',
+        agent: 'div[name="agent"]',
+        cost: 'div[name="cost"]',
+        down: 'div[name="downPayment"]',
+        credit: 'div[name="credit"]',
+        history: 'div[name="bankruptcy"]',
+        address: 'div[name="address"]'
+    },
+    sendScreen : {
+        message: 'div[name="thankYou"]',
+        homeButton: 'button["homeButton"]'
     }
 }
