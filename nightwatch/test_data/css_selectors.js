@@ -50,10 +50,10 @@ module.exports = {
         scorePoor: 'button[name="poor"]'
     },
     historyScreen: {
-        noHistory: 'button[name="noBankruptForeclosure"]',
+        noHistory: 'button[name="noBankruptForeclose"]',
         bankruptcy: 'button[name="bankrupt"]',
-        foreclusure: 'button[name="foreclosure"]',
-        bothHistory: 'button[name="bankruptForeclosure"]'
+        foreclusure: 'button[name="foreclose"]',
+        bothHistory: 'button[name="bankruptForeclose"]'
     },
     addressScreen: {
         addressOne: 'input[name="addressOne"]',
@@ -62,10 +62,10 @@ module.exports = {
         nextButton: 'button[name=next]'        
     },
     nameScreen: {
-        firstName: 'input[name=firstName"]',
+        firstName: 'input[name="firstName"]',
         lastName: 'input[name="lastName"]',
         email: 'input[name="email"]',
-        nextButton: 'button[name=next]'
+        nextButton: 'button[name="next"]'
     },
     overviewScreen: {
         send: 'button[name="send"]',
