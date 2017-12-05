@@ -11,12 +11,12 @@ class WizardNine extends Component {
                 <div className="vert-align">
                     <p>What is your address?</p> <br />
 
-                    <input type="text" placeholder="Line One" onChange={ (e)=>this.props.updateAddOne(e.target.value) }/>
-                    <input type="text" placeholder="Line Two" onChange={ (e)=>this.props.updateAddTwo(e.target.value) }/>
-                    <input type="text" placeholder="Line Three" onChange={ (e)=>this.props.updateAddThree(e.target.value) }/>
+                    <input type="text" name="addressOne" placeholder="Line One" onChange={ (e)=>this.props.updateAddOne(e.target.value) }/>
+                    <input type="text" name="addressTwo" placeholder="Line Two" onChange={ (e)=>this.props.updateAddTwo(e.target.value) }/>
+                    <input type="text" name="addressThree" placeholder="Line Three" onChange={ (e)=>this.props.updateAddThree(e.target.value) }/>
                
                 
-                    <Link to="/wTen"><button className="margin-btn"> Next </button></Link>
+                    <Link to="/wTen"><button name="next" className="margin-btn"> Next </button></Link>
                 </div>
             </div>
         )

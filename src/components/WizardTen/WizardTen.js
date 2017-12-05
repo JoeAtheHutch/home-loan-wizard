@@ -10,11 +10,11 @@ class WizardTen extends Component {
                 <div className="vert-align">
                     <p>What is your name?</p> <br />
 
-                    <input type="text" placeholder="First Name" onChange={ (e)=>this.props.updateFirstName(e.target.value) }/>
-                    <input type="text" placeholder="Last Name" onChange= { (e)=>this.props.updateLastName(e.target.value) }/>
-                    <input type="text" placeholder="email" onChange={ (e)=>this.props.updateEmail(e.target.value) }/>
+                    <input type="text" name="firstName" placeholder="First Name" onChange={ (e)=>this.props.updateFirstName(e.target.value) }/>
+                    <input type="text" name="lastName" placeholder="Last Name" onChange= { (e)=>this.props.updateLastName(e.target.value) }/>
+                    <input type="text" name="email" placeholder="email" onChange={ (e)=>this.props.updateEmail(e.target.value) }/>
                     
-                    <Link to="/wEleven"><button className="margin-btn"> Next </button></Link>
+                    <Link to="/wEleven"><button name="next" className="margin-btn"> Next </button></Link>
                 </div>
             </div>
         )

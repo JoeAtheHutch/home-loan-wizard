@@ -6,11 +6,11 @@ class Finish extends Component {
     render(){
         return(
             <div className="parent-div">
-                <div className="vert-align">
+                <div name="thankYou" className="vert-align">
                     <p>Thank you for choosing Home Loan Wizard, a representative will be in touch with you shortly to talk about further steps.</p> <br />
                
                 
-                    <Link to="/"><button className="margin-btn"> Home </button></Link>
+                    <Link to="/"><button name="homeButton" className="margin-btn"> Home </button></Link>
                 </div>
             </div>
         )

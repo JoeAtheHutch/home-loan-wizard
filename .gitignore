@@ -4,6 +4,8 @@
 /node_modules
 
 # testing
+/tests_output
+nightwatchProps.js
 /coverage
 
 # production
