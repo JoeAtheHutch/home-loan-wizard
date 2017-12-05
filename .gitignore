@@ -7,6 +7,7 @@
 /tests_output
 nightwatchProps.js
 /coverage
+/nightwatch/test_data/test_data_scratch.js
 
 # production
 /build
