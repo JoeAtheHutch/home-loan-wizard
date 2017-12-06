@@ -88,6 +88,6 @@ module.exports = {
     },
     sendScreen : {
         message: 'div[name="thankYou"]',
-        homeButton: 'button["homeButton"]'
+        homeButton: 'button[name="homeButton"]'
     }
 }
