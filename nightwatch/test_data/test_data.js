@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 const selectors = require('../test_data/css_selectors')
 
 module.exports = {
@@ -26,8 +25,6 @@ module.exports = {
             lastName: '12345',
             email: '12345'
             }
-=======
-module.exports={
     goodData: {
         cityName: 'Salt Lake City',
         purchase: '500000',
@@ -38,7 +35,11 @@ module.exports={
         firstName: 'Bruce',
         lastName: 'Wayne',
         email: 'bruce.wayne@imbatman.com'
->>>>>>> cf6d8a2f16c5c8a69291a1e697d1df8f7a82e38b
+    },
+    whatPropScreen: {
+        primaryHome: 'Primary Home',
+        rental: 'Rental Property',
+        secondHome: 'Secondary Home'
     },
     transactions: {
         firstEntry: {
@@ -55,9 +56,7 @@ module.exports={
         },
         thirdEntry: {
             loanType: 'optionEquity', //Home Equity loan, the string is the property key for the loan type dropdown in my selector file
-            propType: 'optionCondo', //condo home, the string is the property key for the property type dropdown in my selector file
-<<<<<<< HEAD
-=======
+            propType: 'optionCondo', //condo home, the string is the property key for the property type dropdown in my selector file              
             loanName: 'Home Equity',
             propName: 'Condo'
         },
@@ -72,7 +71,33 @@ module.exports={
             propType: 'optionMobile', //condo home, the string is the property key for the property type dropdown in my selector file
             loanName: 'Home Equity',
             propName: 'Mobile Home'
->>>>>>> cf6d8a2f16c5c8a69291a1e697d1df8f7a82e38b
+        }
+    },
+    nameScreen: {
+        personOne: {
+            firstName: 'John',
+            lastName: 'Wayne',
+            email: 'john.Wayne@westernhills.net'
+        },
+        personTwo: {
+            firstName: 'Liz',
+            lastName: 'Lemon',
+            email: 'llemon@nbc.com',
+        },
+        personThree: {
+            firstName: '芳珠',
+            lastName: '蔡',
+            email: 'TFC@email.com',
+        },
+        personFour: {
+            firstName: '女',
+            lastName: 'かんぺきちゃん',
+            email: 'All_the_best@people.com',
+        },
+        personFive: {
+            firstName: 'Leia',
+            lastName: 'Organa',
+            email: 'PrincessOrgana@NotTheRebelAlliance.com',
         }
     }
 }
