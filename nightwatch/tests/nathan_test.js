@@ -249,8 +249,8 @@ module.exports = {
             .click(selectors.nextButton)
             .waitForElementVisible(selectors.overviewScreen.startAgain, 5000)
             .click(selectors.overviewScreen.send)
-            .waitForElementVisible(selectors.sendScreen.home, 5000)
-            .click(selectors.sendScreen.home)
+            .waitForElementVisible(selectors.sendScreen.homeButton, 5000)
+            .click(selectors.sendScreen.homeButton)
             .waitForElementVisible(selectors.homeScreen.startButton, 5000)
     }
 

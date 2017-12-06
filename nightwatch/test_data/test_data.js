@@ -1,12 +1,6 @@
 const selectors = require('../test_data/css_selectors')
 
 module.exports = {
-    goodData: {
-        wSix: {
-            purchPrice: '260,000',
-            downPay: '43,000'
-        }
-    },
     badData: {
         wTwo: {
             cityName: '12345'
