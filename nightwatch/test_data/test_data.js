@@ -10,21 +10,22 @@ module.exports = {
     badData: {
         wTwo: {
             cityName: '12345'
-            },
+        },
         wSix: {
             purchPrice: 'Alpha',
             downPay: 'Beta'
-            },
+        },
         wNine: {
             addOne: '$',
             addTwo: '$',
             addThree: '$'
-            },
+        },
         wTen: {
             firstName: '12345',
             lastName: '12345',
             email: '12345'
-            }
+        }
+    },
     goodData: {
         cityName: 'Salt Lake City',
         purchase: '500000',
