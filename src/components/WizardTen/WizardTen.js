@@ -4,6 +4,26 @@ import { updateFirstName, updateLastName, updateEmail } from './../../ducks/redu
 import { connect } from 'react-redux'; 
 
 class WizardTen extends Component {
+    constructor(props) {
+        super(props)
+        this.state = {
+            valid: false
+        }
+        this.firstname = ""
+        this.lastName = ""
+        this.email = ""
+
+        this.validateEmail = this.validateEmail.bind(this)
+    }
+    validateEmail(e) {
+        this.email = e.target.value
+        if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(this.email)) {
+            this.setState({valid:true})
+            this.props.updateEmail(e.target.value)
+        }
+        else
+            this.setState({valid:false})
+    }
     render(){
         return(
             <div className="parent-div">
@@ -12,9 +32,9 @@ class WizardTen extends Component {
 
                     <input type="text" name="firstName" placeholder="First Name" onChange={ (e)=>this.props.updateFirstName(e.target.value) }/>
                     <input type="text" name="lastName" placeholder="Last Name" onChange= { (e)=>this.props.updateLastName(e.target.value) }/>
-                    <input type="text" name="email" placeholder="email" onChange={ (e)=>this.props.updateEmail(e.target.value) }/>
+                    <input type="text" name="email" placeholder="email" onChange={this.validateEmail} />
                     
-                    <Link to="/wEleven"><button name="next" className="margin-btn"> Next </button></Link>
+                    <Link to="/wEleven"><button name="next" disabled={!this.state.valid} className="margin-btn"> Next </button></Link>
                 </div>
             </div>
         )
