@@ -30,8 +30,8 @@ module.exports = {
 module.exports={
     goodData: {
         cityName: 'Salt Lake City',
-        purchase: '$500,000',
-        downPayment: '$100,000',
+        purchase: '500000',
+        downPayment: '100000',
         address1: '341 S Main St',
         address2: 'Ste 100',
         address3: 'Salt Lake City, UT 84005',

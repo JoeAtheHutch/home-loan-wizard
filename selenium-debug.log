@@ -1,15 +1,15 @@
-09:41:06.872 INFO - Selenium build info: version: '3.7.1', revision: '8a0099a'
-09:41:06.873 INFO - Launching a standalone Selenium Server
-2017-12-06 09:41:06.931:INFO::main: Logging initialized @569ms to org.seleniumhq.jetty9.util.log.StdErrLog
-09:41:07.031 INFO - Driver class not found: com.opera.core.systems.OperaDriver
-09:41:07.081 INFO - Driver provider class org.openqa.selenium.ie.InternetExplorerDriver registration is skipped:
+11:44:32.693 INFO - Selenium build info: version: '3.7.1', revision: '8a0099a'
+11:44:32.694 INFO - Launching a standalone Selenium Server
+2017-12-06 11:44:32.768:INFO::main: Logging initialized @685ms to org.seleniumhq.jetty9.util.log.StdErrLog
+11:44:32.870 INFO - Driver class not found: com.opera.core.systems.OperaDriver
+11:44:32.927 INFO - Driver provider class org.openqa.selenium.ie.InternetExplorerDriver registration is skipped:
  registration capabilities Capabilities {browserName: internet explorer, ensureCleanSession: true, platform: WINDOWS, version: } does not match the current platform MAC
-09:41:07.082 INFO - Driver provider class org.openqa.selenium.edge.EdgeDriver registration is skipped:
+11:44:32.927 INFO - Driver provider class org.openqa.selenium.edge.EdgeDriver registration is skipped:
  registration capabilities Capabilities {browserName: MicrosoftEdge, platform: WINDOWS, version: } does not match the current platform MAC
-09:41:07.174 INFO - Using the passthrough mode handler
-2017-12-06 09:41:07.224:INFO:osjs.Server:main: jetty-9.4.5.v20170502
-2017-12-06 09:41:07.255:WARN:osjs.SecurityHandler:main: ServletContext@o.s.j.s.ServletContextHandler@fa36558{/,null,STARTING} has uncovered http methods for path: /
-2017-12-06 09:41:07.261:INFO:osjsh.ContextHandler:main: Started o.s.j.s.ServletContextHandler@fa36558{/,null,AVAILABLE}
-2017-12-06 09:41:07.296:INFO:osjs.AbstractConnector:main: Started ServerConnector@34f5090e{HTTP/1.1,[http/1.1]}{0.0.0.0:4445}
-2017-12-06 09:41:07.296:INFO:osjs.Server:main: Started @935ms
-09:41:07.296 INFO - Selenium Server is up and running
+11:44:33.022 INFO - Using the passthrough mode handler
+2017-12-06 11:44:33.082:INFO:osjs.Server:main: jetty-9.4.5.v20170502
+2017-12-06 11:44:33.118:WARN:osjs.SecurityHandler:main: ServletContext@o.s.j.s.ServletContextHandler@fa36558{/,null,STARTING} has uncovered http methods for path: /
+2017-12-06 11:44:33.126:INFO:osjsh.ContextHandler:main: Started o.s.j.s.ServletContextHandler@fa36558{/,null,AVAILABLE}
+2017-12-06 11:44:33.181:INFO:osjs.AbstractConnector:main: Started ServerConnector@34f5090e{HTTP/1.1,[http/1.1]}{0.0.0.0:4445}
+2017-12-06 11:44:33.181:INFO:osjs.Server:main: Started @1098ms
+11:44:33.182 INFO - Selenium Server is up and running
