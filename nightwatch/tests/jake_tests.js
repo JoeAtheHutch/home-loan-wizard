@@ -1,5 +1,3 @@
-import { select } from '../../../../../Library/Caches/typescript/2.6/node_modules/@types/async';
-
 const selectors = require('../test_data/css_selectors')
 const data = require('../test_data/test_data')
 const func = require('../test_data/helper_functions')
@@ -51,7 +49,7 @@ module.exports = {
                     .url('http://localhost:3000/#/wSeven')
                     .pause(3000)
                     .click(selectors.creditScoreScreen.scorePoor)
-                    .click(selectors.)
+                
             },
                 'Inputting Bad Data in Applicable Fields': browser => {
                     browser
