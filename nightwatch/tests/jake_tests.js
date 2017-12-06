@@ -26,7 +26,6 @@ module.exports = {
                 .setValue(selectors.paymentScreen.downPayment, data.goodData.wSix.downPay)
                 .verify.value(selectors.paymentScreen.downPayment, data.goodData.wSix.downPay)
         },
-        browser: {
             'Testing Each Credit Score Button': browser => {
                 browser
                     .url('http://localhost:3000')
@@ -51,7 +50,6 @@ module.exports = {
                     .pause(3000)
                     .click(selectors.creditScoreScreen.scorePoor)
             },
-            browser: {
                 'Inputting Bad Data in Applicable Fields': browser => {
                     browser
                         .url('http://localhost:3000')
@@ -89,5 +87,3 @@ module.exports = {
                 }
             }
         }
-    }
-}
