@@ -8,7 +8,12 @@ const clickOption = (dropdownSelector, optionSelector, browser) => {
     browser
         .click(`${dropdownSelector} ${optionSelector}`)
 }
+const clickNext = (selector, browser) => {
+    browser
+        .click(selector)
+}
 module.exports = {
     input: input,
-    clickOption: clickOption
+    clickOption: clickOption,
+    clickNext: clickNext
 }

@@ -1,5 +1,6 @@
 module.exports = {
     homeScreen: {
+        message: 'h1[class="home-text"]',
         startButton: 'button[class=home-btn]',
         
     },
@@ -22,7 +23,11 @@ module.exports = {
     },
     cityScreen: {
         city: 'input[name="cityName"]',
+<<<<<<< HEAD
         nextButton: 'button[name="next"]'
+=======
+        nextButton: 'button[name=next]'
+>>>>>>> cf6d8a2f16c5c8a69291a1e697d1df8f7a82e38b
     },
     whatPropScreen: {
         primaryHome: 'button[name="primary"]',
@@ -49,10 +54,10 @@ module.exports = {
         scorePoor: 'button[name="poor"]'
     },
     historyScreen: {
-        noHistory: 'button[name="noBankruptForeclosure"]',
+        noHistory: 'button[name="noBankruptForeclose"]',
         bankruptcy: 'button[name="bankrupt"]',
-        foreclusure: 'button[name="foreclosure"]',
-        bothHistory: 'button[name="bankruptForeclosure"]'
+        foreclusure: 'button[name="foreclose"]',
+        bothHistory: 'button[name="bankruptForeclose"]'
     },
     addressScreen: {
         addressOne: 'input[name="addressOne"]',
@@ -61,13 +66,31 @@ module.exports = {
         nextButton: 'button[name=next]'        
     },
     nameScreen: {
-        firstName: 'input[name=firstName"]',
+        firstName: 'input[name="firstName"]',
         lastName: 'input[name="lastName"]',
         email: 'input[name="email"]',
-        nextButton: 'button[name=next]'
+        nextButton: 'button[name="next"]'
     },
     overviewScreen: {
         send: 'button[name="send"]',
-        startAgain: 'button[name="startOver"]'
+        startAgain: 'button[name="startOver"]',
+        //selectors for the text field on the summary screen
+        name: 'div[name="name"]',
+        email: 'div[name="email"]',
+        loan: 'div[name="loan"]',
+        property: 'div[name="property"]',
+        city: 'div[name="city"]',
+        propertyType: 'div[name="propertyType"]',
+        found: 'div[name="found"]',
+        agent: 'div[name="agent"]',
+        cost: 'div[name="cost"]',
+        down: 'div[name="downPayment"]',
+        credit: 'div[name="credit"]',
+        history: 'div[name="bankruptcy"]',
+        address: 'div[name="address"]'
+    },
+    sendScreen : {
+        message: 'div[name="thankYou"]',
+        homeButton: 'button["homeButton"]'
     }
 }
