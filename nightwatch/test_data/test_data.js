@@ -1,8 +1,34 @@
+const selectors = require('../test_data/css_selectors')
+
 module.exports = {
     goodData: {
+        wSix: {
+            purchPrice: '260,000',
+            downPay: '43,000'
+        }
+    },
+    badData: {
+        wTwo: {
+            cityName: '12345'
+            },
+        wSix: {
+            purchPrice: 'Alpha',
+            downPay: 'Beta'
+            },
+        wNine: {
+            addOne: '$',
+            addTwo: '$',
+            addThree: '$'
+            },
+        wTen: {
+            firstName: '12345',
+            lastName: '12345',
+            email: '12345'
+            }
+    goodData: {
         cityName: 'Salt Lake City',
-        purchase: '$500,000',
-        downPayment: '$100,000',
+        purchase: '500000',
+        downPayment: '100000',
         address1: '341 S Main St',
         address2: 'Ste 100',
         address3: 'Salt Lake City, UT 84005',
@@ -30,7 +56,7 @@ module.exports = {
         },
         thirdEntry: {
             loanType: 'optionEquity', //Home Equity loan, the string is the property key for the loan type dropdown in my selector file
-            propType: 'optionCondo', //condo home, the string is the property key for the property type dropdown in my selector file
+            propType: 'optionCondo', //condo home, the string is the property key for the property type dropdown in my selector file              
             loanName: 'Home Equity',
             propName: 'Condo'
         },
