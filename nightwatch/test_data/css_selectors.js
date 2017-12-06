@@ -1,4 +1,5 @@
 module.exports = {
+    nextButton: 'button[name=next]',
     homeScreen: {
         message: 'h1[class="home-text"]',
         startButton: 'button[class=home-btn]',
