@@ -61,7 +61,7 @@ module.exports = {
         personThree: {
             firstName: '芳珠',
             lastName: '蔡',
-            email: 'The.Best@Girlfriend.com',
+            email: 'TFC@email.com',
         },
         personFour: {
             firstName: '女',
