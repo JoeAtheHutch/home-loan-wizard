@@ -149,7 +149,7 @@ module.exports = {
                 browser
                     .click(selectors.nextButton)
                     .pause(100)
-                browser.expect.element(selectors.overviewScreen.agent).text.to.contain('True')
+                browser.expect.element(selectors.overviewScreen.agent).text.to.contain('Yes')
             }
         }
     },
@@ -196,7 +196,7 @@ module.exports = {
                 browser
                     .click(selectors.nextButton)
                     .pause(100)
-                browser.expect.element(selectors.overviewScreen.agent).text.to.contain('False')
+                browser.expect.element(selectors.overviewScreen.agent).text.to.contain('No')
             }
         }
     },
