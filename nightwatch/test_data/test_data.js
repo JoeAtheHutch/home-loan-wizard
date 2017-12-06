@@ -1,4 +1,4 @@
-module.exports={
+module.exports = {
     goodData: {
         cityName: 'Salt Lake City',
         purchase: '$500,000',
@@ -9,6 +9,11 @@ module.exports={
         firstName: 'Bruce',
         lastName: 'Wayne',
         email: 'bruce.wayne@imbatman.com'
+    },
+    whatPropScreen: {
+        primaryHome: 'Primary Home',
+        rental: 'Rental Property',
+        secondHome: 'Secondary Home'
     },
     transactions: {
         firstEntry: {
@@ -40,6 +45,33 @@ module.exports={
             propType: 'optionMobile', //condo home, the string is the property key for the property type dropdown in my selector file
             loanName: 'Home Equity',
             propName: 'Mobile Home'
+        }
+    },
+    nameScreen: {
+        personOne: {
+            firstName: 'John',
+            lastName: 'Wayne',
+            email: 'john.Wayne@westernhills.net'
+        },
+        personTwo: {
+            firstName: 'Liz',
+            lastName: 'Lemon',
+            email: 'llemon@nbc.com',
+        },
+        personThree: {
+            firstName: '芳珠',
+            lastName: '蔡',
+            email: 'The.Best@Girlfriend.com',
+        },
+        personFour: {
+            firstName: '女',
+            lastName: 'かんぺきちゃん',
+            email: 'All_the_best@people.com',
+        },
+        personFive: {
+            firstName: 'Leia',
+            lastName: 'Organa',
+            email: 'PrincessOrgana@NotTheRebelAlliance.com',
         }
     }
 }
