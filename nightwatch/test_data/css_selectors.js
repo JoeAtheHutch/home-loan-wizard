@@ -21,7 +21,8 @@ module.exports = {
         nextButton: 'button[name=next]'
     },
     cityScreen: {
-        city: 'input[name="cityName"]'
+        city: 'input[name="cityName"]',
+        nextButton: 'button[name="next"]'
     },
     whatPropScreen: {
         primaryHome: 'button[name="primary"]',
