@@ -24,11 +24,7 @@ module.exports = {
     },
     cityScreen: {
         city: 'input[name="cityName"]',
-<<<<<<< HEAD
         nextButton: 'button[name="next"]'
-=======
-        nextButton: 'button[name=next]'
->>>>>>> cf6d8a2f16c5c8a69291a1e697d1df8f7a82e38b
     },
     whatPropScreen: {
         primaryHome: 'button[name="primary"]',
