@@ -3,7 +3,12 @@ const data = require('../test_data/test_data')
 const func = require('../test_data/helper_functions')
 
 module.exports = {
-    browser: {
+    beforeEach: browser => {
+        browser.url('http://localhost:3000')
+    },
+    after: browser => {
+        browser.end()
+    },
         'Testing Options on Payment Screen': browser => {
             browser
                 .url('http://localhost:3000')
@@ -51,40 +56,31 @@ module.exports = {
                     .click(selectors.creditScoreScreen.scorePoor)
                 
             },
-                'Inputting Bad Data in Applicable Fields': browser => {
+                'I can put bad data into "City" and return an Error': browser => {
                     browser
                         .url('http://localhost:3000')
                         .click(selectors.homeScreen.startButton)
                         .click(selectors.loanPropTypeScreen.nextButton)
-                        .setValue(selectors.cityScreen.city, data.badData.wTwo)
+                        func.input(selectors.cityScreen.city, data.badData.wTwo.cityName, browser)
                         .click(selectors.cityScreen.nextButton)
                         .click(selectors.whatPropScreen.primaryHome)
                         .click(selectors.foundHomeScreen.found)
                         .click(selectors.agentScreen.agent)
-                        .setValue(selectors.paymentScreen.purchasePrice, data.badData.wSix.purchPrice)
-                        .setValue(selectors.paymentScreen.downPayment, data.badData.wSix.downPay)
+                        func.input(selectors.paymentScreen.purchasePrice, data.goodData.purchase, browser)
+                        func.input(selectors.paymentScreen.downPayment, data.goodData.downPayment, browser)
                         .click(selectors.paymentScreen.nextButton)
                         .click(selectors.creditScoreScreen.scoreExcellent)
                         .click(selectors.historyScreen.bankruptcy)
-                        .setValue(selectors.addressScreen.addressOne, data.badData.wNine.addOne)
-                        .setValue(selectors.addressScreen.addressTwo, data.badData.wNine.addTwo)
-                        .setValue(selectors.addressScreen.addressThree, data.badData.wNine.addThree)
-                        .setValue(selectors.nameScreen.firstName, data.badData.wTen.firstName)
-                        .setValue(selectors.nameScreen.lastName, data.badData.wTen.lastName)
-                        .setValue(selectors.nameScreen.email, data.badData.wTen.email)
+                        func.input(selectors.addressScreen.addressOne, data.goodData.address1, browser)
+                        func.input(selectors.addressScreen.addressTwo, data.goodData.address2, browser)
+                        func.input(selectors.addressScreen.addressThree, data.goodData.address3, browser)
+                        .click(selectors.addressScreen.nextButton)
+                        func.input(selectors.nameScreen.firstName, data.goodData.firstName, browser)
+                        func.input(selectors.nameScreen.lastName, data.goodData.lastName, browser)
+                        func.input(selectors.nameScreen.email, data.goodData.email, browser)
                         .click(selectors.nameScreen.nextButton)
-                        .verify.value(selectors.overviewScreen.city, data.badData.wTwo.cityName)
-                        .verify.value(selectors.overviewScreen.cost, data.badData.wSix.purchPrice)
-                        .verify.value(selectors.overviewScreen.down, data.badData.wSix.downPay)
-                        .verify.value(selectors.overviewScreen.address, data.badData.wNine.addOne)
-                        .verify.value(selectors.overviewScreen.address, data.badData.wNine.addTwo)
-                        .verify.value(selectors.overviewScreen.address, data.badData.wNine.addThree)
-                        .verify.value(selectors.overviewScreen.name, data.badData.wTen.firstName)
-                        .verify.value(selectors.overviewScreen.name, data.badData.wTen.lastName)
-                        .verify.value(selectors.overviewScreen.name, data.badData.wTen.email)
-                },
-                afterAll: browser => {
-                    browser.end()
+                        
+      
                 }
             }
         }
