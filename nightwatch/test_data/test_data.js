@@ -17,7 +17,7 @@ module.exports = {
         nameScreen: {
             firstName: '12345',
             lastName: '12345',
-            email: '12345'
+            email: ''
         }
     },
     goodData: {
