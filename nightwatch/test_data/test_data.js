@@ -2,19 +2,19 @@ const selectors = require('../test_data/css_selectors')
 
 module.exports = {
     badData: {
-        wTwo: {
-            cityName: '12345'
+        cityScreen: {
+            cityName: ''
         },
-        wSix: {
+        purchaseScreen: {
             purchPrice: 'Alpha',
             downPay: 'Beta'
         },
-        wNine: {
+        addressScreen: {
             addOne: '$',
             addTwo: '$',
             addThree: '$'
         },
-        wTen: {
+        nameScreen: {
             firstName: '12345',
             lastName: '12345',
             email: '12345'

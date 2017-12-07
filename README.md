@@ -132,7 +132,7 @@
   12. Summary screen
     * This screen will show the user an overview of the information provided, and will allow them to submit the report, or to star the form over.
 
-  * All screens require entry before the user can proseed
+  * All screens require entry before the user can pros eed
   * Placeholder text should be used to provide the user expectations for required entries
 
   Once the submit button is selected, the form will be sent to the lenders' server for appropriate distribution within their systems.
