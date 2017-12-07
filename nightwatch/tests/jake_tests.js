@@ -104,20 +104,40 @@ module.exports = {
             .click(selectors.creditScoreScreen.scoreExcellent)
             .click(selectors.historyScreen.noHistory)
             .clearValue(selectors.addressScreen.addressOne)
-            .clearValue(selectors.addressScreen.addressTwo)
             .clearValue(selectors.addressScreen.addressThree)
             .setValue(selectors.addressScreen.addressOne, data.badData.addressScreen.addOne)
-            .setValue(selectors.addressScreen.addressTwo, data.badData.addressScreen.addTwo)
             .setValue(selectors.addressScreen.addressThree, data.badData.addressScreen.addThree)
         browser.expect.element(selectors.addressScreen.addressOne).text.to.equal('')
-        browser.expect.element(selectors.addressScreen.addressTwo).text.to.equal('')
         browser.expect.element(selectors.addressScreen.addressThree).text.to.equal('')
-
-
-
-
-
-
+    },
+    'I can put bad data into "Name" and return an Error': browser => {
+        browser
+            .click(selectors.homeScreen.startButton)
+            .click(selectors.loanPropTypeScreen.nextButton)
+            .pause(5000)
+            .clearValue(selectors.cityScreen.city)
+            .setValue(selectors.cityScreen.city, data.goodData.cityName)
+            .click(selectors.cityScreen.nextButton)
+            .click(selectors.whatPropScreen.primaryHome)
+            .click(selectors.foundHomeScreen.found)
+            .click(selectors.agentScreen.agent)
+            .clearValue(selectors.paymentScreen.purchasePrice)
+            .clearValue(selectors.paymentScreen.downPayment)
+            .setValue(selectors.paymentScreen.purchasePrice, data.goodData.purchase)
+            .setValue(selectors.paymentScreen.downPayment, data.goodData.downPayment)
+            .click(selectors.paymentScreen.nextButton)
+            .click(selectors.creditScoreScreen.scoreExcellent)
+            .click(selectors.historyScreen.noHistory)
+            .clearValue(selectors.addressScreen.addressOne)
+            .clearValue(selectors.addressScreen.addressTwo)
+            .clearValue(selectors.addressScreen.addressThree)
+            .setValue(selectors.addressScreen.addressOne, data.goodData.address1)
+            .setValue(selectors.addressScreen.addressTwo, data.goodData.address2)
+            .setValue(selectors.addressScreen.addressThree, data.goodData.address3)
+            .click(selectors.addressScreen.nextButton)
+            .clearValue(selectors.nameScreen.email)
+            .setValue(selectors.nameScreen.email, data.badData.nameScreen.email)
+            browser.expect.element(selectors.nameScreen.email).text.to.equal('')
     }
 
 }
