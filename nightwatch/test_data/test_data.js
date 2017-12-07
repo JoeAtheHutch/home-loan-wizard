@@ -92,7 +92,7 @@ module.exports = {
         personFive: {
             firstName: 'Leia',
             lastName: 'Organa',
-            email: 'PrincessOrgana@NotTheRebelAlliance.com',
+            email: 'P.Leia@NotARebel.com',
         }
     }
 }
